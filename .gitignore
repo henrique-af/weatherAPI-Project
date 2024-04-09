@@ -1,1 +1,7 @@
 .env
+.gitignore
+venv
+api/__pycache__
+data/__pycache__
+graphs/__pycache__
+main.py

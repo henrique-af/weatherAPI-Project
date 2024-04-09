@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resultado da Previsão do Tempo</title>
+</head>
+
+<body>
+    <h1>Previsão do Tempo para {{ weather.name }}</h1>
+    <p>Temperatura: {{ weather.main.temp }}°C</p>
+    <form action="/">
+        <button type="submit">Voltar</button>
+    </form>
+    <br>
+    <br>
+    <form action="/next_5_days">
+        <button type="submit">Confira previsão dos próximos dias</button>
+    </form>
+</body>
+
+</html>
