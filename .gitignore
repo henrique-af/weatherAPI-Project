@@ -5,3 +5,4 @@ api/__pycache__
 data/__pycache__
 graphs/__pycache__
 .main.py
+api/.openAI_api.py
