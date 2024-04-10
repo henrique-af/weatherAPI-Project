@@ -31,7 +31,7 @@ def get_geocode_by_city_name(city, api_weather):
 def get_weather_on_location(lat, lon, api_weather):
 
     response = requests.get(
-        f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_weather}&units=metric"
+        f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_weather}&units=metric&lang=pt_br"
     )
     if response.status_code == 200:
         weather_data = response.json()
@@ -39,7 +39,7 @@ def get_weather_on_location(lat, lon, api_weather):
     else:
         return None
 
-#5 days of weather
+# 5 days of weather
 def get_weather_5_days(lat, lon, api_weather):
     try:
         response = requests.get(

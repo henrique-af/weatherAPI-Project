@@ -27,6 +27,8 @@ def get_weather():
     if lat is not None and lon is not None:
         weather_data = get_weather_on_location(lat, lon, api_key)
         session["weather_data"] = weather_data
+
+        print(weather_data)
         return render_template("weather_result.html", weather=weather_data)
     else:
         return "Falha ao obter dados da cidade."

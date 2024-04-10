@@ -66,8 +66,6 @@ def plot_daily_weather(daily_stats):
         zorder=5,
     )
 
-    print(city)
-
     plt.xlabel("Data")
     plt.ylabel("Valores em ºC")
     plt.title(f"Previsão de 5 dias em {city}")
